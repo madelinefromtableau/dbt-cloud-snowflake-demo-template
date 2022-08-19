@@ -25,7 +25,7 @@ metrics:
     description: "Total sales over time"
     type: sum
     sql: net_item_sales_amount
-    timestamp: order_date
+    timestamp: dateadd(year, 20, order_date)
     time_grains: [day, week, month]
 
     dimensions:
